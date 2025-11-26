@@ -27,3 +27,9 @@ body {
 .htmldiv {
     background-color: #6f9be1;
 }
+
+img {
+    width: 300px;
+    height: 800px;
+
+}
