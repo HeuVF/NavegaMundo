@@ -20,14 +20,7 @@ namespace NavegaMundo.Controllers
 
         public IActionResult ProcurarLocais()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult ProcurarLocais(Produto produto)
-        {
-            _produtoRepositorio.AdicionarProduto(produto);
-            return RedirectToAction(nameof(Index));
+            return View(_produtoRepositorio.TodosProdutos());
         }
 
 

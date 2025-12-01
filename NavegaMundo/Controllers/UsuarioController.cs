@@ -22,7 +22,7 @@ namespace NavegaMundo.Controllers
             var usuario = _usuarioRepositorio.ObterUsuario(email);
             if (usuario != null && usuario.Senha == senha)
             {
-                return RedirectToAction("CadastrarProduto", "Produto");
+                return RedirectToAction("Index", "Produto");
             }
 
             ModelState.AddModelError("", "Email ou senha inválidos.");
