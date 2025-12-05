@@ -125,3 +125,7 @@ hr {
     justify-content: center;
     align-items: center;
 }
+
+body {
+    background: #d9ecff;
+}
